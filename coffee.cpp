@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include<windows.h>
 
 using namespace std;
 
@@ -19,11 +20,13 @@ class Date
             cin >> age;
 
             cout << "\nHi," << name << " <3." << endl;
+            Sleep(1000);
         }
 
         ~Date()
         {
             cout << "\nNvm Bye, I already miss you :)";
+            Sleep(2000);
         }
 };
 
@@ -63,7 +66,7 @@ int main()
         cout << "||                           ========                              ||" << endl;
         cout << "||                                                                 ||" << endl;
         loop1();
-    
+    Sleep(2000);
     cout << "\nSo, would like to go out on a coffee ;) ? " << endl;
     cout << "Enter Y for Yes or N for no *fingers crossed* : ";
     cin >> YorN;
